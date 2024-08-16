@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Motor node -->
+    <include file="$(find xycar_motor)/launch/xycar_motor.launch"/>
+
+    <!-- Ultrasonic Sensor Node -->
+    <include file="$(find xycar_ultrasonic)/launch/xycar_ultrasonic.launch"/>
+
+    <node name="ultra_driver" pkg="juno_ultra_driving" type="main.py" output="screen">
+        <param name="speed" value="18"/>
+    </node>
+</launch>

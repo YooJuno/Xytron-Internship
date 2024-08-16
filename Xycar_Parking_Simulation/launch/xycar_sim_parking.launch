@@ -1,0 +1,3 @@
+<launch>
+  <node name="simulator"  pkg="xycar_sim_parking" type="main.py" output="screen"/>
+</launch>

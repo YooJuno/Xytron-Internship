@@ -9,7 +9,7 @@
 - Local Path-Planning
     - 주변환경을 인지하고 장애물을 회피하는 등의 임시경로를 생성하는 것
     
-    ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled.png)
+    ![Untitled](images/Untitled.png)
     
 
 - **Quintic Polynomials Planner (5차 다항식을 이용한 경로생성)**
@@ -19,13 +19,13 @@
     - 비용함수 C는 시간 간격 T 내에서 두 위치 사이를 이동할 때
     - "jerk" 제곱의 시간 적분으로 정의된다.
         
-        ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled%201.png)
+        ![Untitled](images/Untitled%201.png)
         
 
 - 비용함수를 최소화하는 결과
     - 2차원 로봇을 위한 5차 다항식
         
-        ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled%202.png)
+        ![Untitled](images/Untitled%202.png)
         
     - 5차 다항식의 계산
         
@@ -67,18 +67,18 @@
 - 경로상에 있거나 있지 않은 위치로부터
 - 경로를 점근적으로 따라가도록 이동체의 움직임을 제어하는 것
     
-    ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled%203.png)
+    ![Untitled](images/Untitled%203.png)
     
 - 위치의 오차를 이용하는 것이 아닌 쎄타 값을 이용하여 제어하는 것이 더욱 효과적이고 안정적
 - 즉 **Stanley Control** 방식이 더 좋음(**방향 오차** 까지도 고려하기 때문에)
 - **Cross Track Error**와 **Heading Error** 를 고려하여 제어하기 때문에 최대 조향 각도를 준수함
     
-    ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled%204.png)
+    ![Untitled](images/Untitled%204.png)
     
     - **Cross Track Error** : 계획된 트랙으로부터의 직선거리
     - **Heading Error** : 트랙 진행 방향과 차량 진행 방향의 차이
     
-    ![Untitled](%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%89%E1%85%A2%E1%86%BC%E1%84%89%E1%85%A5%E1%86%BC%20%E1%84%86%E1%85%B5%E1%86%BE%20%E1%84%80%E1%85%A7%E1%86%BC%E1%84%85%E1%85%A9%E1%84%8E%E1%85%AE%E1%84%8C%E1%85%A9%E1%86%BC%20e4cbcc9f74c54677b020284108c03852/Untitled%205.png)
+    ![Untitled](images/Untitled%205.png)
     
     - 위 그림에서는 Heading error에 대한 설명으로 보이는데, Cross Track Error의 내용이 나와서 헷갈린다.
 
